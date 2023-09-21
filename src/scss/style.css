@@ -1,0 +1,11 @@
+header {
+  margin: 0;
+}
+header img {
+  max-width: 250px;
+  margin: 3rem;
+  border-radius: 50%;
+}
+header .foto {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */

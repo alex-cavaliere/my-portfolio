@@ -1,0 +1,118 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    & img{
+        max-width: 250px;
+    }
+    & .foto{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-left: 2rem;
+        
+    }
+    & .logo{
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+    & nav{
+        display: flex;
+        & a{
+            margin-right: 4rem;
+            font-size: larger;
+            text-decoration: underline rgba($color: #000000, $alpha: 0);
+            text-underline-offset: 0px;
+            color: #051E44;
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 8px;
+                color: #b91212;
+                transition: all 250ms linear;
+            }
+        }
+    }
+}
+#home{
+    min-height: 70vh;
+    background-color: #051E44;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: -20px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin: 2rem;
+    & article{
+        border: 2px solid #ffffffb9;
+        border-radius: 20px;
+        padding: 1rem;
+        color: #051E44;
+        background-color: #ECECEC;
+        animation: faded 300ms ease-in;
+        & .card-wrapper{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 20px;
+            row-gap: 20px;
+            & a{
+                color: #051E44;
+                text-decoration: none;
+                opacity: 0;
+                animation: faded 250ms ease-in-out forwards;
+                &:nth-child(1){
+                    animation-delay: 50ms;
+                }
+                &:nth-child(2){
+                    animation-delay: 200ms;
+                }
+                &:nth-child(3){
+                    animation-delay: 400ms;
+                }
+                &:nth-child(4){
+                    animation-delay: 600ms;
+                }
+                &:nth-child(5){
+                    animation-delay: 800ms;
+                }
+                &:visited{
+                    color: #051E44;
+                }
+            }
+            & .card{
+                box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
+                border: 1px solid #051e4489;
+                border-radius: 20px;
+                margin: 1rem;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    & :nth-child(n){
+        width: 50px;
+        margin: 1rem;
+    }
+}
+.active{
+    color: #b91212;
+}
+
+@keyframes faded {
+    from {
+        opacity: 0;
+        transform: translateY(-5%)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

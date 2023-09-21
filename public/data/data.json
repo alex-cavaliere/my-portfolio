@@ -1,0 +1,34 @@
+{
+    "projects" : [
+        {
+            "title": "Oh My Food",
+            "description": "La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. L'objectif de ce projet est la maîtrise du CSS et de ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
+            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_3_11042022/index.html",
+            "imgUrl": "/assets/Alessandro_Cavaliere_foto.jpeg"
+        },
+        {
+            "title": "Game On",
+            "description": "La mission consiste à créer une modale pour un formulaire, gérer la saisie de l'utilisateur en vérifiant qu'il n'y a pas d'erreurs de validation à l'aide de JavaScript (conditions, Regex).",
+            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_4_06052022/",
+            "imgUrl": ""
+        },
+        {
+            "title": "Fisheye",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_6_06062022/index.html",
+            "imgUrl": ""
+        },
+        {
+            "title": "Les Petits Plats",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_7_25072022/",
+            "imgUrl": ""
+        },
+        {
+            "title": "Kasa",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "url": "",
+            "imgUrl": ""
+        }
+    ]
+}
