@@ -9,28 +9,15 @@ import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function showCards() {
-  const cards = document.querySelectorAll('.card');
-  cards.forEach((card, index) => {
-    setTimeout(() => {
-      card.style.opacity = '1';
-      card.style.transform = 'translateY(0)';
-    }, 500 * index); // Ritardo di 500ms tra ciascun div
-  });
-}
-
-// Aggiungi un evento di caricamento per chiamare la funzione
-window.addEventListener('load', showCards);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Header/>
       <Routes>
-        <Route exact path='/' element={<HomePage />}/>
-        <Route path='/info' element={<Bio />}/>
-        <Route path='/contact' element={<Contact />}/>
+          <Route exact path='/my-portfolio/homepage' element={<HomePage />}/>
+          <Route path='/my-portfolio/info' element={<Bio />}/>
+          <Route path='/my-portfolio/contact' element={<Contact />}/>
       </Routes>
       <Footer/>
     </Router>

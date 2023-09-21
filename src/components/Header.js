@@ -9,9 +9,9 @@ function Header() {
         <img className='logo' src={logo} alt='Alessandro Cavaliere'/>
       </div>
       <nav>
-        <NavLink to='/'>Homepage</NavLink>
-        <NavLink to='/info'>info </NavLink>
-        <NavLink to='/contact'>contact</NavLink>
+        <NavLink to='/my-portfolio/homepage'>Homepage</NavLink>
+        <NavLink to='/my-portfolio/info'>info </NavLink>
+        <NavLink to='/my-portfolio/contact'>contact</NavLink>
       </nav>
     </header>
   )
