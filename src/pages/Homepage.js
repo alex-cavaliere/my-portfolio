@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 function HomePage() {
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('my-portfolio/data/data.json')
+    fetch('/my-portfolio/data/data.json')
     .then(res => {
       if(res.ok){
         return res.json()
