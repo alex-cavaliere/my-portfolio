@@ -87,6 +87,7 @@ section article .card-wrapper a:visited {
   color: #051E44;
 }
 section article .card-wrapper .card {
+  max-width: 440px;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid rgba(5, 30, 68, 0.537254902);
   border-radius: 20px;
@@ -94,6 +95,17 @@ section article .card-wrapper .card {
 }
 section article .card-wrapper .card img {
   width: 100%;
+}
+section article .card-wrapper .card p {
+  width: 95%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-align: center;
+}
+section article .card-wrapper .card p:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -109,6 +121,12 @@ footer :nth-child(n) {
   color: #b91212;
 }
 
+@media screen and (max-width: 450px) {
+  section article .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @keyframes faded {
   from {
     opacity: 0;

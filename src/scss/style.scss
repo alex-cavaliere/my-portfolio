@@ -83,6 +83,7 @@ section{
                 }
             }
             & .card{
+                max-width: 440px;
                 box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
                 border: 1px solid #051e4489;
                 border-radius: 20px;
@@ -90,6 +91,18 @@ section{
                 & img{
                     width: 100%;
                 }
+                & p{
+                    width: 95%;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    text-align: center;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                
             }
         }
     }
@@ -104,6 +117,14 @@ footer{
 }
 .active{
     color: #b91212;
+}
+
+@media screen and (max-width:450px) {
+    section article .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 @keyframes faded {
