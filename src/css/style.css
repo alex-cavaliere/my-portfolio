@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 100px;
 }
 header img {
   max-width: 250px;
@@ -151,18 +152,16 @@ footer :nth-child(n) {
 @media screen and (max-width: 768px) {
   header nav a {
     display: none;
-    margin-right: 6rem;
   }
-  header .navbar.responsive {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  header .navbar.responsive a {
+  header nav.responsive a {
     display: block;
+    background-color: white;
+    padding: 1rem;
+    transform: translateY(180%);
+    border-bottom: 1px solid #051E44;
   }
-  header .navbar.responsive span {
-    top: 1rem;
+  header nav.responsive span {
+    top: 1.5rem;
   }
   header nav span {
     display: block;
@@ -172,7 +171,7 @@ footer :nth-child(n) {
   header nav span:hover {
     background-color: #051E44;
     color: white;
-    transition: all 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
   section article .card-wrapper {
     display: flex;
