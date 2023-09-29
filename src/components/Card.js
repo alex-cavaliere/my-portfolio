@@ -11,18 +11,18 @@ function Card(props) {
     //const pageUrl = props.url
     console.log(imgUrl)
     //const imgUrl = props.imgUrl
-    const showCard = (state) => {
-        const descriptions = Array.from(document.querySelectorAll('p'))
+    const showCard = () => {
         setIsOpen(!isOpen)
-        console.log(state)
-        descriptions.forEach((description) => {
-            if(state.classList.contains('open')){
-                description.style.display = '-webkit-box'
-            }else{
-                description.style.display = 'block'
-            }
-        })
     }
+    const descriptions = document.querySelectorAll('p')
+    descriptions.forEach((description, index) => {
+        console.log(index)
+        if(!isOpen){
+            description.style.display = '-webkit-box'
+        }else{
+            description.style.display = 'block'
+        }
+    })
     return(
         <div className='card'>
             <a href={url} target='_blank' rel="noreferrer">

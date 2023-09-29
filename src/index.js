@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function showCards() {
+/*function showCards() {
   const cards = document.querySelectorAll('.card');
   cards.forEach((card, index) => {
     setTimeout(() => {
@@ -21,7 +21,7 @@ function showCards() {
 
 // Aggiungi un evento di caricamento per chiamare la funzione
 window.addEventListener('load', showCards);
-
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
