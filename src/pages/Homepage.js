@@ -32,8 +32,8 @@ function HomePage() {
         <article>
           <h2>Mes Projets</h2>
           <div className='card-wrapper'>
-            {data.projects && data.projects.map((project) => {
-              return <Card key={project.title} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
+            {data.projects && data.projects.map((project, index) => {
+              return <Card key={index} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
             })}
           </div>
         </article>

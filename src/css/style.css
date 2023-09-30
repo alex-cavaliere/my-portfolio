@@ -18,7 +18,12 @@ header .logo {
   margin-left: 1rem;
 }
 header nav {
+  width: 30%;
+}
+header nav .navbar-container {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 header nav span {
   display: none;
@@ -30,7 +35,6 @@ header nav span i {
   font-size: x-large;
 }
 header nav a {
-  margin-right: 4rem;
   font-size: larger;
   text-decoration: underline rgba(0, 0, 0, 0);
   text-underline-offset: 0px;
@@ -153,15 +157,18 @@ footer :nth-child(n) {
   header nav a {
     display: none;
   }
-  header nav.responsive a {
+  header nav.responsive .navbar-container {
+    flex-direction: column;
+    position: relative;
+    right: 1.2rem;
+    top: 7rem;
+  }
+  header nav.responsive .navbar-container a {
     display: block;
+    text-align: left;
     background-color: white;
     padding: 1rem;
-    transform: translateY(180%);
     border-bottom: 1px solid #051E44;
-  }
-  header nav.responsive span {
-    top: 1.5rem;
   }
   header nav span {
     display: block;

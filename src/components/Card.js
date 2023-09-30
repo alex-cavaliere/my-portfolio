@@ -29,7 +29,7 @@ function Card(props) {
                 <h3>{title}</h3>
                 <img src={provaImg} alt='foto'/>
             </a>
-            <p key={title + '-description'} className={`description ${isOpen ? 'open' : 'closed'}`} onClick={(e) => showCard(e.target)}>{description}</p>
+            <p className={`description-${title} ${isOpen ? 'open' : 'closed'}`} onClick={(e) => showCard(e.target)}>{description}</p>
         </div>
     )
 }
