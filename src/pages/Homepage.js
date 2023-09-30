@@ -33,7 +33,7 @@ function HomePage() {
           <h2>Mes Projets</h2>
           <div className='card-wrapper'>
             {data.projects && data.projects.map((project, index) => {
-              return <Card key={index} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
+              return <Card key={index} idx={index} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
             })}
           </div>
         </article>

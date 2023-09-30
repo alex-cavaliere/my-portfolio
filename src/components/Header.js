@@ -12,7 +12,6 @@ function Header() {
     }
   }
   window.addEventListener('click', function (e){
-    console.log(e.target)
     const x = document.querySelector('nav')
     if (!e.target.className.match('icon') && !e.target.className.match('fa-solid')){
       x.className = 'navbar'
