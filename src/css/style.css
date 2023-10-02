@@ -114,16 +114,17 @@ section article .card-wrapper .card:visited {
 }
 section article .card-wrapper .card img {
   width: 100%;
-  height: 81%;
+  border-top: 1px solid rgba(5, 30, 68, 0.1);
   border-bottom: 1px solid rgba(5, 30, 68, 0.537254902);
   border-radius: 0 0 20px 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 section article .card-wrapper .card p {
   position: absolute;
   bottom: 0;
   margin: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3176470588), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768627451), rgba(0, 0, 0, 0.4392156863));
+  color: rgba(245, 245, 245, 0.922);
   box-shadow: 0px -5px 3px rgba(0, 0, 0, 0.3176470588);
   border-radius: 0 0 20px 20px;
   display: -webkit-box;

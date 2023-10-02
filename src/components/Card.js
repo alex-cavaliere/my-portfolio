@@ -28,7 +28,7 @@ function Card(props) {
         <div className='card'>
             <a href={url} target='_blank' rel="noreferrer">
                 <h3>{title}</h3>
-                <img src={provaImg} alt='foto'/>
+                <img src={imgUrl} alt='foto'/>
             </a>
             <p className={`description-${index} ${isOpen ? 'open' : 'closed'}`} onClick={(e) => showCard(e.target)}>{description}</p>
         </div>
