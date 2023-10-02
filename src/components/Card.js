@@ -1,5 +1,10 @@
 import '../css/style.css'
 //import provaImg from '../assets/img.jpg'
+import photo_1 from '../assets/images/screenshots/Screenshot(83).png'
+import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
+import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
+import photo_4 from '../assets/images/screenshots/Screenshot(86).png'
+import photo_5 from '../assets/images/screenshots/Screenshot(87).png'
 import { useState } from 'react'
 
 function Card(props) {
