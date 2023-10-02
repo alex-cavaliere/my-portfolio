@@ -1,5 +1,5 @@
 import '../css/style.css'
-import provaImg from '../assets/img.jpg'
+//import provaImg from '../assets/img.jpg'
 import { useState } from 'react'
 
 function Card(props) {
