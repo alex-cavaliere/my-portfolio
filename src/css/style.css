@@ -82,7 +82,7 @@ section article .card-wrapper a {
 }
 section article .card-wrapper .card {
   position: relative;
-  height: 20rem;
+  height: 100%;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid rgba(5, 30, 68, 0.537254902);
   border-radius: 20px;
@@ -185,6 +185,11 @@ footer :nth-child(n) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 325px) {
+  .logo {
+    opacity: 0;
   }
 }
 @keyframes faded {

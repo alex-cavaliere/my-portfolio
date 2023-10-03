@@ -78,7 +78,7 @@ section{
             }
             & .card{
                 position: relative;
-                height: 20rem;
+                height: 100%;
                 box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
                 border: 1px solid #051e4489;
                 border-radius: 20px;
@@ -193,6 +193,11 @@ footer{
         align-items: center;
     }
     
+}
+@media screen and (max-width:325px){
+    .logo{
+        opacity: 0;
+    }
 }
 
 @keyframes faded {
