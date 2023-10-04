@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 import '../css/style.css'
-//import provaImg from '../assets/img.jpg'
 import photo_1 from '../assets/images/screenshots/Screenshot(83).png'
 import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
 import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
