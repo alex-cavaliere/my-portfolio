@@ -1,10 +1,4 @@
-/* eslint-disable no-unused-vars */
 import '../css/style.css'
-import photo_1 from '../assets/images/screenshots/Screenshot(83).png'
-import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
-import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
-import photo_4 from '../assets/images/screenshots/Screenshot(86).png'
-import photo_5 from '../assets/images/screenshots/Screenshot(87).png'
 import { useState } from 'react'
 
 function Card(props) {
@@ -33,7 +27,8 @@ function Card(props) {
         <div className='card'>
             <a href={url} target='_blank' rel="noreferrer">
                 <h3>{title}</h3>
-                <img src={imgUrl} alt='foto'/>
+                <div className='background-image' style={{ backgroundImage: `url('${imgUrl}')`}}>
+                </div>  
             </a>
             <p className={`description-${index} ${isOpen ? 'open' : 'closed'}`} onClick={(e) => showCard(e.target)}>{description}</p>
         </div>

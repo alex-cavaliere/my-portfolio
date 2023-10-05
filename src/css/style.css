@@ -56,70 +56,79 @@ header nav a:hover {
   margin-top: -20px;
 }
 
-section {
+#projets {
   display: flex;
   justify-content: center;
-  width: fit-content;
+  margin: auto;
+  width: 100%;
   padding-bottom: 2rem;
-  margin: 2rem;
+  margin-top: 2rem;
 }
-section article {
+#projets article {
   border: 2px solid rgba(255, 255, 255, 0.7254901961);
+  width: 100%;
   border-radius: 20px;
   padding: 1rem;
   color: #051E44;
   background-color: #ECECEC;
   animation: faded 300ms ease-in;
 }
-section article .card-wrapper {
+#projets article .card-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
 }
-section article .card-wrapper a {
-  color: #051E44;
-  text-decoration: none;
-}
-section article .card-wrapper .card {
+#projets article .card-wrapper .card {
   position: relative;
   background-color: #051E44;
-  height: 100%;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid rgba(5, 30, 68, 0.537254902);
   border-radius: 20px;
+  max-width: 500px;
   opacity: 0;
   animation: faded 250ms ease-in-out forwards;
   scale: 0.96;
 }
-section article .card-wrapper .card h3 {
+#projets article .card-wrapper .card a {
+  color: #051E44;
+  text-decoration: none;
+}
+#projets article .card-wrapper .card a .background-image {
+  border-radius: 0 0 20px 20px;
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+#projets article .card-wrapper .card h3 {
   margin: 0.5rem;
   color: white;
 }
-section article .card-wrapper .card:hover {
+#projets article .card-wrapper .card:hover {
   scale: 1;
   background-color: #25406D;
   transition: scale 200ms ease-in, background-color 100ms ease-in;
 }
-section article .card-wrapper .card:nth-child(1) {
+#projets article .card-wrapper .card:nth-child(1) {
   animation-delay: 50ms;
 }
-section article .card-wrapper .card:nth-child(2) {
+#projets article .card-wrapper .card:nth-child(2) {
   animation-delay: 200ms;
 }
-section article .card-wrapper .card:nth-child(3) {
+#projets article .card-wrapper .card:nth-child(3) {
   animation-delay: 400ms;
 }
-section article .card-wrapper .card:nth-child(4) {
+#projets article .card-wrapper .card:nth-child(4) {
   animation-delay: 600ms;
 }
-section article .card-wrapper .card:nth-child(5) {
+#projets article .card-wrapper .card:nth-child(5) {
   animation-delay: 800ms;
 }
-section article .card-wrapper .card:visited {
+#projets article .card-wrapper .card:visited {
   color: #051E44;
 }
-section article .card-wrapper .card img {
+#projets article .card-wrapper .card img {
   width: 100%;
   padding-bottom: 3rem;
   border-top: 1px solid rgba(5, 30, 68, 0.1);
@@ -127,7 +136,7 @@ section article .card-wrapper .card img {
   border-radius: 0 0 20px 20px;
   object-fit: contain;
 }
-section article .card-wrapper .card p {
+#projets article .card-wrapper .card p {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -141,7 +150,7 @@ section article .card-wrapper .card p {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-section article .card-wrapper .card p:hover {
+#projets article .card-wrapper .card p:hover {
   cursor: pointer;
 }
 
@@ -151,11 +160,14 @@ section article .card-wrapper .card p:hover {
 #info #about {
   display: flex;
   max-width: 90%;
-  height: 80%;
-  margin: auto;
+  height: 100%;
+  margin: 1rem auto auto auto;
 }
 #info #about .about-text {
+  margin: auto;
   width: 50%;
+  padding: 0 6rem 0 6rem;
+  text-align: justify;
 }
 #info #about aside {
   background: url("../assets/img.jpg");
@@ -176,7 +188,7 @@ footer :nth-child(n) {
 }
 
 @media screen and (max-width: 1024px) {
-  section article .card-wrapper {
+  #projets article .card-wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -208,10 +220,8 @@ footer :nth-child(n) {
     color: white;
     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
-  section article .card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #projets article .card-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 325px) {

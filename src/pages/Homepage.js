@@ -21,7 +21,6 @@ function HomePage() {
     console.log(data)
   return (
     <div id="home">
-      <h1>HomePage</h1>
       <section id="experiences">
         <article>
           <h2>Mes Experience</h2>

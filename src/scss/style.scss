@@ -55,14 +55,16 @@ header{
     text-align: center;
     margin-top: -20px;
 }
-section{
+#projets{
     display: flex;
     justify-content: center;
-    width: fit-content;
+    margin: auto;
+    width: 100%;
     padding-bottom: 2rem;
-    margin: 2rem;
+    margin-top: 2rem;
     & article{
         border: 2px solid #ffffffb9;
+        width: 100%;
         border-radius: 20px;
         padding: 1rem;
         color: #051E44;
@@ -73,20 +75,27 @@ section{
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 20px;
             row-gap: 20px;
-            & a{
-                color: #051E44;
-                text-decoration: none;
-            }
             & .card{
                 position: relative;
                 background-color: #051E44;
-                height: 100%;
                 box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
                 border: 1px solid #051e4489;
                 border-radius: 20px;
+                max-width: 500px;
                 opacity: 0;
                 animation: faded 250ms ease-in-out forwards;
                 scale: 0.96;
+                & a{
+                    color: #051E44;
+                    text-decoration: none;
+                    & .background-image{
+                        border-radius: 0 0 20px 20px;
+                        height: 18rem;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position-x: center;
+                    }
+                }
                 & h3{
                     margin: 0.5rem;
                     color: white;
@@ -149,10 +158,13 @@ section{
     & #about{
         display: flex;
         max-width: 90%;
-        height: 80%;
-        margin: auto;
+        height: 100%;
+        margin: 1rem auto auto auto;
         & .about-text{
+            margin: auto;
             width: 50%;
+            padding: 0 6rem 0 6rem;
+            text-align: justify;
         }
         & aside{
             background: url('../assets/img.jpg');
@@ -173,7 +185,7 @@ footer{
 }
 
 @media screen and (max-width:1024px) {
-    section article .card-wrapper{
+    #projets article .card-wrapper{
         grid-template-columns: 1fr 1fr;
     }
     
@@ -213,10 +225,8 @@ footer{
         }
     }
 
-    section article .card-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #projets article .card-wrapper{
+        grid-template-columns: 1fr;
     }
     
 }
