@@ -7,7 +7,7 @@ import HomePage from './pages/Homepage';
 import Bio from './pages/Bio';
 import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
