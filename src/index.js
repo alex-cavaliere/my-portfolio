@@ -15,9 +15,9 @@ root.render(
     <Router>
       <Header/>
       <Routes>
-          <Route exact path='/my-portfolio/' element={<HomePage />}/>
-          <Route exact path='/my-portfolio/info' element={<Bio />}/>
-          <Route exact path='/my-portfolio/contact' element={<Contact />}/>
+          <Route exact path='/' element={<HomePage />}/>
+          <Route exact path='/info' element={<Bio />}/>
+          <Route exact path='/contact' element={<Contact />}/>
       </Routes>
       <Footer/>
     </Router>
