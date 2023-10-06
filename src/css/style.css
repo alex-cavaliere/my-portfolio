@@ -168,10 +168,14 @@ header nav a:hover {
   width: 50%;
   padding: 0 6rem 0 6rem;
   text-align: justify;
+  animation: infoAnimation 800ms ease-in-out;
 }
 #info #about aside {
-  background: url("../assets/img.jpg");
+  background: url("../assets/Alessandro_Cavaliere_foto.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 50%;
+  animation: photoAnimation 500ms ease-in-out;
 }
 
 footer {
@@ -192,7 +196,7 @@ footer :nth-child(n) {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   header nav a {
     display: none;
   }
@@ -220,6 +224,12 @@ footer :nth-child(n) {
     color: white;
     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
+  #info #about .about-text {
+    width: 100%;
+  }
+  #info #about aside {
+    display: none;
+  }
   #projets article .card-wrapper {
     grid-template-columns: 1fr;
   }
@@ -237,6 +247,26 @@ footer :nth-child(n) {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes infoAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes photoAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
