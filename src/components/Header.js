@@ -24,9 +24,9 @@ function Header() {
       </div>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <NavLink to='/my-portfolio'>Homepage</NavLink>
-          <NavLink to='/info'>info </NavLink>
-          <NavLink to='/contact'>contact</NavLink>
+          <NavLink to='/my-portfolio/homepage'>Homepage</NavLink>
+          <NavLink to='/my-portfolio/info'>info </NavLink>
+          <NavLink to='/my-portfolio/contact'>contact</NavLink>
         </div>
         <span className='icon' onClick={editNavbar}><i className="fa-solid fa-bars"></i></span>
       </nav>
