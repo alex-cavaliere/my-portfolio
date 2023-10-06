@@ -24,7 +24,7 @@ function Header() {
       </div>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <NavLink to='/my-portfolio/home'>Homepage</NavLink>
+          <NavLink to='/my-portfolio/'>Homepage</NavLink>
           <NavLink to='/my-portfolio/info'>info </NavLink>
           <NavLink to='/my-portfolio/contact'>contact</NavLink>
         </div>
