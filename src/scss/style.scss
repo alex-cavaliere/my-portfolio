@@ -159,11 +159,11 @@ header{
         display: flex;
         max-width: 90%;
         height: 100%;
-        margin: 1rem auto auto auto;
+        margin: 1.3rem auto auto auto;
         & .about-text{
             margin: auto;
             width: 50%;
-            padding: 0 6rem 0 6rem;
+            padding: 0 4rem 0 4rem;
             text-align: justify;
             animation: infoAnimation 800ms ease-in-out;
         }
@@ -233,6 +233,7 @@ footer{
         & #about{
             & .about-text{
                 width: 100%;
+                padding: 1rem;
             }
             & aside{
                 display: none;

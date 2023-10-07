@@ -161,12 +161,12 @@ header nav a:hover {
   display: flex;
   max-width: 90%;
   height: 100%;
-  margin: 1rem auto auto auto;
+  margin: 1.3rem auto auto auto;
 }
 #info #about .about-text {
   margin: auto;
   width: 50%;
-  padding: 0 6rem 0 6rem;
+  padding: 0 4rem 0 4rem;
   text-align: justify;
   animation: infoAnimation 800ms ease-in-out;
 }
@@ -226,6 +226,7 @@ footer :nth-child(n) {
   }
   #info #about .about-text {
     width: 100%;
+    padding: 1rem;
   }
   #info #about aside {
     display: none;
