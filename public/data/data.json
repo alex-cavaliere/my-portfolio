@@ -29,6 +29,12 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_11_24112022",
             "imgUrl": "/my-portfolio/static/media/Screenshot(87).cb64bd324050aaa9739b.png"
+        },
+        {
+            "title": "Oh My Food",
+            "description": "La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. L'objectif de ce projet est la maîtrise du CSS et de ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
+            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_3_11042022/index.html",
+            "imgUrl": "/my-portfolio/static/media/Screenshot(83).afeeaa5290629931facc.png"
         }
     ]
 }

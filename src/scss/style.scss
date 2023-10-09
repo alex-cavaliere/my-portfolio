@@ -39,7 +39,7 @@ header{
         }
     }
 }
-#home, #info{
+#home, #info, #contact{
     background-color: #051E44;
     color: #FFFFFF;
     text-align: center;
@@ -168,6 +168,9 @@ header{
         }
     }
 }
+#contact{
+    height: 78vh;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -177,10 +180,7 @@ footer{
         width: 50px;
         height: 50px;
         scale: 0.9;
-        &:hover{
-            scale: 1;
-            transition: scale 200ms linear;
-        }
+   
     }
 }
 .active{
@@ -190,6 +190,11 @@ footer{
 @media screen and (max-width:1024px) {
     #projets article .card-wrapper{
         grid-template-columns: 1fr 1fr;
+    }
+    #info{
+        & #about{
+            overflow: auto;
+        }
     }
     
     
@@ -242,6 +247,8 @@ footer{
     }
     #projets article .card-wrapper{
         grid-template-columns: 1fr;
+        margin: auto;
+        width: 80%;
     }
     
 }

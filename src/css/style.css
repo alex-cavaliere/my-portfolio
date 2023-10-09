@@ -40,12 +40,12 @@ header nav a:hover {
   transition: all 250ms linear;
 }
 
-#home, #info {
+#home, #info, #contact {
   background-color: #051E44;
   color: #FFFFFF;
   text-align: center;
 }
-#home h1, #info h1 {
+#home h1, #info h1, #contact h1 {
   font-size: x-large;
   margin: 0;
 }
@@ -169,6 +169,10 @@ header nav a:hover {
   animation: photoAnimation 500ms ease-in-out;
 }
 
+#contact {
+  height: 78vh;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -180,10 +184,6 @@ footer :nth-child(n) {
   height: 50px;
   scale: 0.9;
 }
-footer :nth-child(n):hover {
-  scale: 1;
-  transition: scale 200ms linear;
-}
 
 .active {
   color: #b91212;
@@ -192,6 +192,9 @@ footer :nth-child(n):hover {
 @media screen and (max-width: 1024px) {
   #projets article .card-wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+  #info #about {
+    overflow: auto;
   }
 }
 @media screen and (max-width: 800px) {
@@ -234,6 +237,8 @@ footer :nth-child(n):hover {
   }
   #projets article .card-wrapper {
     grid-template-columns: 1fr;
+    margin: auto;
+    width: 80%;
   }
 }
 @media screen and (max-width: 325px) {

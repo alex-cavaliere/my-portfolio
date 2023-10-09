@@ -2,6 +2,13 @@ import '../css/style.css';
 import logo from '../assets/logo_cavaliere.png';
 import { NavLink } from 'react-router-dom';
 
+window.addEventListener('click', function (e){
+  const x = document.querySelector('nav')
+  if (x.className.match('responsive') && !e.target.className.match('fa-solid')){
+    x.classList.remove('responsive')
+  }
+})
+
 function Header() {
   const editNavbar = () => {
     const x = document.querySelector('nav')
@@ -11,12 +18,6 @@ function Header() {
       x.className = 'navbar'
     }
   }
-  window.addEventListener('click', function (e){
-    const x = document.querySelector('nav')
-    if (!e.target.className.match('icon') && !e.target.className.match('fa-solid')){
-      x.className = 'navbar'
-    }
-  })
   return (
     <header>
       <div className='title'>
