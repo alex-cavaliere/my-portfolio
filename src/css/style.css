@@ -8,10 +8,12 @@ header {
 }
 header img {
   width: 250px;
+  height: 70px;
   margin-left: 1rem;
 }
 header nav {
   width: 30%;
+  height: auto;
 }
 header nav .navbar-container {
   display: flex;
@@ -21,8 +23,8 @@ header nav .navbar-container {
 header nav span {
   display: none;
   position: absolute;
-  padding: 1rem;
-  border-radius: 20px;
+  padding: 0.6rem;
+  border-radius: 10px;
 }
 header nav span i {
   font-size: x-large;
@@ -40,6 +42,18 @@ header nav a:hover {
   transition: all 250ms linear;
 }
 
+.carousel-p {
+  width: 90%;
+  margin: auto;
+}
+.carousel-p img {
+  width: 100%;
+  max-height: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
+  object-fit: scale-down;
+  border-radius: 20px;
+}
+
 #home, #info, #contact {
   background-color: #051E44;
   color: #FFFFFF;
@@ -48,6 +62,7 @@ header nav a:hover {
 #home h1, #info h1, #contact h1 {
   font-size: x-large;
   margin: 0;
+  padding: 0.5rem;
 }
 
 #projets {
@@ -74,7 +89,7 @@ header nav a:hover {
   row-gap: 20px;
 }
 #projets article .card-wrapper .card {
-  position: relative;
+  width: 100%;
   background-color: #051E44;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid rgba(5, 30, 68, 0.537254902);
@@ -83,6 +98,7 @@ header nav a:hover {
   opacity: 0;
   animation: faded 250ms ease-in-out forwards;
   scale: 0.96;
+  margin: auto;
 }
 #projets article .card-wrapper .card a {
   color: #051E44;
@@ -174,14 +190,17 @@ header nav a:hover {
 }
 
 footer {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
 }
-footer :nth-child(n) {
-  width: 50px;
-  height: 50px;
+footer :nth-child(n) svg {
+  width: 40px;
+  height: 40px;
+  padding: 1rem;
   scale: 0.9;
 }
 
@@ -238,7 +257,6 @@ footer :nth-child(n) {
   #projets article .card-wrapper {
     grid-template-columns: 1fr;
     margin: auto;
-    width: 80%;
   }
 }
 @media screen and (max-width: 325px) {

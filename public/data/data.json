@@ -2,39 +2,33 @@
     "projects" : [
         {
             "title": "Oh My Food",
-            "description": "La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. L'objectif de ce projet est la maîtrise du CSS et de ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
+            "description": "Site 'mobile first' répertoriant les menus de restaurants gastronomiques. L'objectif de ce projet est de maîtriser le CSS et ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_3_11042022/index.html",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(83).afeeaa5290629931facc.png"
+            "imgUrl": "/my-portfolio/static/media/Screenshot(83).d3575dc21fa74d5cb84b.png"
         },
         {
             "title": "Game On",
-            "description": "La mission consiste à créer une modale pour un formulaire, gérer la saisie de l'utilisateur en vérifiant qu'il n'y a pas d'erreurs de validation à l'aide de JavaScript (conditions, Regex).",
+            "description": "Création d'une modale pour un formulaire, gestion de la saisie de l'utilisateur en vérifiant qu'il n'y a pas d'erreurs de validation à l'aide de JavaScript (conditions, expressions régulières).",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_4_06052022/",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(84).7e19e542ad006492d3e1.png"
+            "imgUrl": "/my-portfolio/static/media/Screenshot(84).52c55a494abb17317480.png"
         },
         {
             "title": "Fisheye",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "Plateforme pour photographes réalisée entièrement en JavaScript (ES6) sans utiliser de framework. L'objectif était de tester ma capacité à créer des fonctions et à gérer des événements.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_6_06062022/index.html",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(85).ec376467828a723a0d03.png"
+            "imgUrl": "/my-portfolio/static/media/Screenshot(85).ddbcc2fcdc2fa2473ca7.png"
         },
         {
             "title": "Les Petits Plats",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "Interface simple d'une application de recettes réalisée entièrement à l'aide de Bootstrap, incluant un algorithme de recherche.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_7_25072022/",
             "imgUrl": "/my-portfolio/static/media/Screenshot(86).eb17396c1297f624be90.png"
         },
         {
             "title": "Kasa",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "Page web d'une application de recherche d'appartements responsive réalisée avec React, en créant des composants réutilisables et en utilisant React-Router.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_11_24112022",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(87).cb64bd324050aaa9739b.png"
-        },
-        {
-            "title": "Oh My Food",
-            "description": "La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. L'objectif de ce projet est la maîtrise du CSS et de ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
-            "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_3_11042022/index.html",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(83).afeeaa5290629931facc.png"
+            "imgUrl": "/my-portfolio/static/media/Screenshot(87).e1c6749b0cf225a8bd13.png"
         }
     ]
 }

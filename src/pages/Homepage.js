@@ -1,11 +1,46 @@
+/* eslint-disable no-unused-vars */
 import '../css/style.css';
 import Card from '../components/Card';
 import { useEffect, useState } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import CarouselItem from '../components/Carousel';
+import photo_1 from '../assets/images/screenshots/Screenshot(83).png'
+import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
+import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
+import photo_4 from '../assets/images/screenshots/Screenshot(86).png'
+import photo_5 from '../assets/images/screenshots/Screenshot(87).png'
 
 // fetch riuscito, gestire i dati di Card
 
 function HomePage() {
   const [data, setData] = useState([])
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const preloadImages = () => {
+    const imageUrls = [
+      photo_1,
+      photo_2,
+      photo_3,
+      photo_4,
+      photo_5
+    ];
+
+    let imagesLoadedCount = 0;
+
+
+    imageUrls.forEach((imageUrl) => {
+      const img = new Image();
+      img.src = imageUrl;
+
+      img.onload = () => {
+        imagesLoadedCount++;
+        if (imagesLoadedCount === imageUrls.length) {
+          // Tutte le immagini sono state precaricate
+          setImagesLoaded(true);
+        }
+      };
+    });
+  };
   useEffect(() => {
     fetch('/my-portfolio/data/data.json')
     .then(res => {
@@ -17,27 +52,37 @@ function HomePage() {
       setData(data)
     })
     .catch(err => console.log(err))
+    preloadImages()
   },[])
+  if(!imagesLoaded){
+    return <div>Loading..-</div>
+  }
     console.log(data)
   return (
-    <div id="home">
-      <section id="experiences">
-        <article>
-          <h1>Mon Portfolio</h1>
-          <div className='card'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </article>
-      </section>
-      <section id="projets">
-        <article>
-          <h2>Mes Projets</h2>
-          <div className='card-wrapper'>
-            {data.projects && data.projects.map((project, index) => {
-              return <Card key={index} idx={index} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
-            })}
-          </div>
-        </article>
-      </section>
-    </div>
+    <>
+    {data && imagesLoaded && <div id="home">
+        <section id="experiences">
+          <article>
+            <h1>Mon Portfolio</h1>
+            <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={true}>
+              {data.projects && data.projects.map((project, index) => {
+                return <CarouselItem key={`carousel-${index}`} url={project.url} imgUrl={project.imgUrl} description={project.description}/>
+              })}
+            </Carousel>
+          </article>
+        </section>
+        <section id="projets">
+          <article>
+            <h2>Mes Projets</h2>
+            <div className='card-wrapper'>
+              {data.projects && data.projects.map((project, index) => {
+                return <Card key={`card-${index}`} idx={index} title={project.title} description={project.description} url={project.url} imgUrl={project.imgUrl} />
+              })}
+            </div>
+          </article>
+        </section>
+      </div>}
+    </>
   )
 }
 
