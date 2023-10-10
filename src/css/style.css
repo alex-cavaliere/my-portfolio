@@ -50,16 +50,17 @@ header nav a:hover {
   width: 100%;
   max-height: 400px;
   background-color: rgba(0, 0, 0, 0.3);
-  object-fit: scale-down;
+  object-fit: cover;
+  object-position: top;
   border-radius: 20px;
 }
 
-#home, #info, #contact {
+#home, #info, #contacts {
   background-color: #051E44;
   color: #FFFFFF;
   text-align: center;
 }
-#home h1, #info h1, #contact h1 {
+#home h1, #info h1, #contacts h1 {
   font-size: x-large;
   margin: 0;
   padding: 0.5rem;
@@ -185,8 +186,31 @@ header nav a:hover {
   animation: photoAnimation 500ms ease-in-out;
 }
 
-#contact {
+#contacts {
   height: 78vh;
+}
+#contacts .contacts-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 100%;
+  animation: faded 250ms linear;
+}
+#contacts .contacts-container ul {
+  animation: faded 250ms linear;
+}
+#contacts .contacts-container ul li {
+  padding: 1rem;
+  list-style-type: none;
+}
+#contacts .contacts-container .item-email {
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+}
+#contacts .contacts-container .item-email a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
 }
 
 footer {
@@ -258,10 +282,16 @@ footer :nth-child(n) svg {
     grid-template-columns: 1fr;
     margin: auto;
   }
+  #contacts .contacts-container .item-email a {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 325px) {
   .logo {
     opacity: 0;
+  }
+  #contacts .contacts-container .item-email a {
+    font-size: 1rem;
   }
 }
 @keyframes faded {

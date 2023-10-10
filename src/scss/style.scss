@@ -48,11 +48,12 @@ header{
         width: 100%;
         max-height: 400px;
         background-color: rgba(#00000048, 0.3);
-        object-fit: scale-down;
+        object-fit: cover;
+        object-position: top;
         border-radius: 20px;
     }
 }
-#home, #info, #contact{
+#home, #info, #contacts{
     background-color: #051E44;
     color: #FFFFFF;
     text-align: center;
@@ -183,8 +184,31 @@ header{
         }
     }
 }
-#contact{
+#contacts{
     height: 78vh;
+    & .contacts-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100%;
+        animation: faded 250ms linear;
+        & ul{
+            animation: faded 250ms linear;
+            & li{
+                padding: 1rem;
+                list-style-type: none;
+            }
+        }
+        & .item-email{
+            text-decoration: underline;
+            text-underline-offset: 2rem;
+            & a{
+                text-decoration: none;
+                color: white;
+                font-size: 3rem;
+            }
+        }
+    }
 }
 footer{
     width: 100%;
@@ -268,11 +292,17 @@ footer{
         grid-template-columns: 1fr;
         margin: auto;
     }
+    #contacts .contacts-container .item-email a{
+        font-size: 1.5rem;
+    }
     
 }
 @media screen and (max-width:325px){
     .logo{
         opacity: 0;
+    }
+    #contacts .contacts-container .item-email a{
+        font-size: 1rem;
     }
 }
 
