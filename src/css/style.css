@@ -257,6 +257,7 @@ footer :nth-child(n) svg {
     background-color: white;
     padding: 1rem;
     border-bottom: 1px solid #051E44;
+    z-index: 9999;
   }
   header nav span {
     display: block;
