@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import CarouselItem from '../components/Carousel';
+import LoadingSpinner from '../components/Loader';
 import photo_1 from '../assets/images/screenshots/Screenshot(83).png'
 import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
 import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
@@ -15,42 +16,36 @@ import photo_5 from '../assets/images/screenshots/Screenshot(87).png'
 
 function HomePage() {
   const [data, setData] = useState([])
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  const preloadImages = () => {
-    const imageUrls = [
-      photo_1,
-      photo_2,
-      photo_3,
-      photo_4,
-      photo_5
-    ];
-
-    let imagesLoadedCount = 0;
-
-
-    imageUrls.forEach((imageUrl) => {
-      const img = new Image();
-      img.src = imageUrl;
-
-      img.onload = () => {
-        imagesLoadedCount++;
-        if (imagesLoadedCount === imageUrls.length) {
-          // Tutte le immagini sono state precaricate
-          setImagesLoaded(true);
-        }
-      };
-    });
-    if(!imagesLoaded){
-      return (
-        <div className='loader'>
-          <div className='loader-ring'>
-            <div></div><div></div><div></div><div></div>
-          </div>
-        </div>
-      )
-    }
-  };
+  const [isLoading, setIsLoading] = useState(true)
+  const [imagesLoaded, setImagesLoaded] = useState(false)
+  
   useEffect(() => {
+    setIsLoading(true)
+    const preloadImages = () => {
+      const imageUrls = [
+        photo_1,
+        photo_2,
+        photo_3,
+        photo_4,
+        photo_5
+      ];
+  
+      let imagesLoadedCount = 0;
+  
+  
+      imageUrls.forEach((imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+  
+        img.onload = () => {
+          imagesLoadedCount++;
+          if (imagesLoadedCount === imageUrls.length) {
+            // Tutte le immagini sono state precaricate
+            setImagesLoaded(true);
+          }
+        };
+      });
+    };
     fetch('/my-portfolio/data/data.json')
     .then(res => {
       if(res.ok){
@@ -61,12 +56,12 @@ function HomePage() {
       setData(data)
     })
     .catch(err => console.log(err))
+    setIsLoading(false)
     preloadImages()
-  },[])
-  console.log(data)
+  },[imagesLoaded])
   return (
     <>
-    {data && imagesLoaded && <div id="home">
+    {!isLoading && data && imagesLoaded ? (<div id="home">
         <section id="experiences">
           <article>
             <h1>Mon Portfolio</h1>
@@ -87,7 +82,7 @@ function HomePage() {
             </div>
           </article>
         </section>
-      </div>}
+      </div>) : (<LoadingSpinner/>)}
     </>
   )
 }

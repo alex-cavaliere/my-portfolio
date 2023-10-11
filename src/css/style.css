@@ -209,6 +209,10 @@ header nav a:hover {
   margin: auto;
   list-style-type: none;
 }
+#contacts .contacts-container ul li a {
+  text-decoration: none;
+  color: white;
+}
 #contacts .contacts-container ul li span {
   margin-right: 1rem;
 }

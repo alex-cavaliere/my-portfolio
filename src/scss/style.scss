@@ -202,6 +202,10 @@ header{
                 width: fit-content;
                 margin: auto;
                 list-style-type: none;
+                & a{
+                    text-decoration: none;
+                    color: white;
+                }
                 & span{
                     margin-right: 1rem;
                 }
