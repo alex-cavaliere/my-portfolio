@@ -8,7 +8,7 @@ function Contact() {
         <h1>Contacts</h1>
         <div className='contacts-container'>
           <ul className='contacts-items'>
-            <li className='item'><span className="fi fi-fr"></span><a href='tel:+330767688211'>tel:+33 0767688211</a></li>
+            <li className='item'><span className="fi fi-fr"></span><a href='tel:+33767688211'>tel:+33 767688211</a></li>
             <li className='item'><span className="fi fi-it"></span><a href='tel:+393477728839'>tel:+39 3477728839</a></li>
           </ul>
           <p className='item-email'>
