@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.09acf361.css",
-    "main.js": "/my-portfolio/static/js/main.bca4a207.js",
+    "main.css": "/my-portfolio/static/css/main.5d9bcb31.css",
+    "main.js": "/my-portfolio/static/js/main.fead6958.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Screenshot(87).png": "/my-portfolio/static/media/Screenshot(87).e1c6749b0cf225a8bd13.png",
     "static/media/Screenshot(83).png": "/my-portfolio/static/media/Screenshot(83).d3575dc21fa74d5cb84b.png",
@@ -141,6 +141,7 @@
     "static/media/gr.svg": "/my-portfolio/static/media/gr.f4f1efd04d192aac3cbe.svg",
     "static/media/nu.svg": "/my-portfolio/static/media/nu.c4afdde3280afe436fc8.svg",
     "static/media/kp.svg": "/my-portfolio/static/media/kp.510d0a3c130d94bfd139.svg",
+    "index.html": "/my-portfolio/index.html",
     "static/media/envelope-open-text-solid.svg": "/my-portfolio/static/media/envelope-open-text-solid.86be8916cce5a02f2f5edce843a83f03.svg",
     "static/media/cm.svg": "/my-portfolio/static/media/cm.c3d6559075a3adc19bbc.svg",
     "static/media/kn.svg": "/my-portfolio/static/media/kn.924ba78fe913a3dbd988.svg",
@@ -157,7 +158,6 @@
     "static/media/hk.svg": "/my-portfolio/static/media/hk.b80f4f843c33522190c6.svg",
     "static/media/lr.svg": "/my-portfolio/static/media/lr.c70ba2e26749882f79c7.svg",
     "static/media/jo.svg": "/my-portfolio/static/media/jo.6fe6e076d9928ca834ff.svg",
-    "index.html": "/my-portfolio/index.html",
     "static/media/mm.svg": "/my-portfolio/static/media/mm.53de19a4603b655a1a68.svg",
     "static/media/ws.svg": "/my-portfolio/static/media/ws.314e33c2a444698f4bce.svg",
     "static/media/cw.svg": "/my-portfolio/static/media/cw.7b83329130ff6a4d69d4.svg",
@@ -281,12 +281,12 @@
     "static/media/bd.svg": "/my-portfolio/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/pe.svg": "/my-portfolio/static/media/pe.d64e9732fcaa8f765994.svg",
     "static/media/id.svg": "/my-portfolio/static/media/id.f624e2c8444a7794b357.svg",
-    "main.09acf361.css.map": "/my-portfolio/static/css/main.09acf361.css.map",
-    "main.bca4a207.js.map": "/my-portfolio/static/js/main.bca4a207.js.map",
+    "main.5d9bcb31.css.map": "/my-portfolio/static/css/main.5d9bcb31.css.map",
+    "main.fead6958.js.map": "/my-portfolio/static/js/main.fead6958.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09acf361.css",
-    "static/js/main.bca4a207.js"
+    "static/css/main.5d9bcb31.css",
+    "static/js/main.fead6958.js"
   ]
 }
