@@ -41,6 +41,9 @@ header{
         }
     }
 }
+#root{
+    position: relative;
+}
 .carousel-p{
     width: 90%;
     margin: auto;
@@ -195,8 +198,13 @@ header{
         & ul{
             animation: faded 250ms linear;
             & li{
-                padding: 1rem;
+                padding: 1rem 1rem 1rem 0;
+                width: fit-content;
+                margin: auto;
                 list-style-type: none;
+                & span{
+                    margin-right: 1rem;
+                }
             }
         }
         & .item-email{
@@ -211,12 +219,14 @@ header{
     }
 }
 footer{
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
     width: 100%;
-    height: auto;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
     & :nth-child(n){
         & svg {
             width: 40px;
@@ -228,6 +238,43 @@ footer{
 }
 .active{
     color: #b91212;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(white, 0.4);
+    & .loader-ring {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        & div{
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border: 8px solid #fff;
+            border-radius: 50%;
+            animation: loaderAnimation 1.4s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: #fff transparent transparent transparent;
+            
+            &:nth-child(1) {
+                animation-delay: -0.45s;
+            }
+            &:nth-child(2) {
+                animation-delay: -0.3s;
+            }
+            &:nth-child(3) {
+                animation-delay: -0.15s;
+            }
+          }
+      }
 }
 
 @media screen and (max-width:1024px) {
@@ -337,3 +384,11 @@ footer{
         transform: scale(1);
     }
 }
+@keyframes loaderAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

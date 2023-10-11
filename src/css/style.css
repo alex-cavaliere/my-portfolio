@@ -42,6 +42,10 @@ header nav a:hover {
   transition: all 250ms linear;
 }
 
+#root {
+  position: relative;
+}
+
 .carousel-p {
   width: 90%;
   margin: auto;
@@ -200,8 +204,13 @@ header nav a:hover {
   animation: faded 250ms linear;
 }
 #contacts .contacts-container ul li {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
+  width: fit-content;
+  margin: auto;
   list-style-type: none;
+}
+#contacts .contacts-container ul li span {
+  margin-right: 1rem;
 }
 #contacts .contacts-container .item-email {
   text-decoration: underline;
@@ -214,12 +223,14 @@ header nav a:hover {
 }
 
 footer {
+  background-color: white;
+  position: absolute;
+  bottom: -5rem;
   width: 100%;
-  height: auto;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5rem;
 }
 footer :nth-child(n) svg {
   width: 40px;
@@ -230,6 +241,42 @@ footer :nth-child(n) svg {
 
 .active {
   color: #b91212;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.loader .loader-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader .loader-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: loaderAnimation 1.4s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.loader .loader-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loader .loader-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loader .loader-ring div:nth-child(3) {
+  animation-delay: -0.15s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -323,6 +370,14 @@ footer :nth-child(n) svg {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes loaderAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

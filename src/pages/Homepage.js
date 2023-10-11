@@ -40,6 +40,15 @@ function HomePage() {
         }
       };
     });
+    if(!imagesLoaded){
+      return (
+        <div className='loader'>
+          <div className='loader-ring'>
+            <div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+      )
+    }
   };
   useEffect(() => {
     fetch('/my-portfolio/data/data.json')
@@ -54,10 +63,7 @@ function HomePage() {
     .catch(err => console.log(err))
     preloadImages()
   },[])
-  if(!imagesLoaded){
-    return <div>Loading..-</div>
-  }
-    console.log(data)
+  console.log(data)
   return (
     <>
     {data && imagesLoaded && <div id="home">
