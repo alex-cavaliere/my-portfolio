@@ -34,10 +34,13 @@ function HomePage() {
   
   
       imageUrls.forEach((imageUrl) => {
-        const img = new Image();
-        img.src = imageUrl;
-  
-        img.onload = () => {
+        const link = document.createElement('link')
+        link.rel = 'preload'
+        link.as = 'image'
+        link.href = imageUrl
+        document.head.appendChild(link)
+        
+        link.onload = () => {
           imagesLoadedCount++;
           if (imagesLoadedCount === imageUrls.length) {
             // Tutte le immagini sono state precaricate

@@ -245,12 +245,15 @@ footer{
 }
 
 .loader{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(white, 0.4);
+    background-color: #051E44;
+    opacity: 0.5;
+    z-index: 9999;
     & .loader-ring {
         display: inline-block;
         position: relative;
