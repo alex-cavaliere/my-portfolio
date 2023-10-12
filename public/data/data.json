@@ -4,31 +4,31 @@
             "title": "Oh My Food",
             "description": "Site 'mobile first' répertoriant les menus de restaurants gastronomiques. L'objectif de ce projet est de maîtriser le CSS et ses animations (Keyframes, transitions), ainsi que la responsivité de la page.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_3_11042022/index.html",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(83).d3575dc21fa74d5cb84b.png"
+            "imgUrl": "/static/media/Screenshot(83).d3575dc21fa74d5cb84b.png"
         },
         {
             "title": "Game On",
             "description": "Création d'une modale pour un formulaire, gestion de la saisie de l'utilisateur en vérifiant qu'il n'y a pas d'erreurs de validation à l'aide de JavaScript (conditions, expressions régulières).",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_4_06052022/",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(84).52c55a494abb17317480.png"
+            "imgUrl": "/static/media/Screenshot(84).52c55a494abb17317480.png"
         },
         {
             "title": "Fisheye",
             "description": "Plateforme pour photographes réalisée entièrement en JavaScript (ES6) sans utiliser de framework. L'objectif était de tester ma capacité à créer des fonctions et à gérer des événements.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_6_06062022/index.html",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(85).ddbcc2fcdc2fa2473ca7.png"
+            "imgUrl": "/static/media/Screenshot(85).ddbcc2fcdc2fa2473ca7.png"
         },
         {
             "title": "Les Petits Plats",
             "description": "Interface simple d'une application de recettes réalisée entièrement à l'aide de Bootstrap, incluant un algorithme de recherche.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_7_25072022/",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(86).eb17396c1297f624be90.png"
+            "imgUrl": "/static/media/Screenshot(86).eb17396c1297f624be90.png"
         },
         {
             "title": "Kasa",
             "description": "Page web d'une application de recherche d'appartements responsive réalisée avec React, en créant des composants réutilisables et en utilisant React-Router.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_11_24112022",
-            "imgUrl": "/my-portfolio/static/media/Screenshot(87).e1c6749b0cf225a8bd13.png"
+            "imgUrl": "/static/media/Screenshot(87).e1c6749b0cf225a8bd13.png"
         }
     ]
 }
