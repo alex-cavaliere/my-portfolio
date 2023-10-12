@@ -49,7 +49,7 @@ function HomePage() {
         };
       });
     };
-    fetch('/my-portfolio/data/data.json')
+    fetch('/data/data.json')
     .then(res => {
       if(res.ok){
         return res.json()
