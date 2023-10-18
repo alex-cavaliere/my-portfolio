@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build" 
+  publish = "build"       
+
+[build.environment]
+  SITEMAP_URL = "https://alessandrocavaliere91.netlify.app/sitemap.xml"
