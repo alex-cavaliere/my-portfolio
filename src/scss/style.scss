@@ -17,6 +17,7 @@ header{
             display: flex;
             justify-content: space-around;
             width: 100%;
+            transform: scale(0);
         }
         & span{
             display: none;
@@ -309,6 +310,9 @@ footer{
                 position: absolute;
                 right: 0;
                 top: 6rem;
+                transform: scale(1);
+                transition: transform 250ms ease-in-out;
+                z-index: 99999;
                 & a{
                     display: block;
                     text-align: left;
@@ -323,11 +327,6 @@ footer{
             display: block;
             right: 2rem;
             top: 1.5rem;
-            &:hover{
-                background-color: #051E44;
-                color: white;
-                transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-            }
         }
     }
     #info{
