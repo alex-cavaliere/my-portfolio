@@ -29,6 +29,12 @@
             "description": "Page web d'une application de recherche d'appartements responsive réalisée avec React, en créant des composants réutilisables et en utilisant React-Router.",
             "url": "https://alex-cavaliere.github.io/Alessandro_Cavaliere_11_24112022",
             "imgUrl": "/my-portfolio/static/media/Screenshot(87).e1c6749b0cf225a8bd13.png"
+        },
+        {
+            "title": "Maison Auben",
+            "description": "Site web vitrine pour architectes et designers d’intérieur realisé avec React.",
+            "url": "https://maisonauben.com/",
+            "imgUrl": "public/images/screenshots/Screenshot(88).png"
         }
     ]
 }
