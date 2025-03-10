@@ -11,6 +11,7 @@ import photo_2 from '../assets/images/screenshots/Screenshot(84).png'
 import photo_3 from '../assets/images/screenshots/Screenshot(85).png'
 import photo_4 from '../assets/images/screenshots/Screenshot(86).png'
 import photo_5 from '../assets/images/screenshots/Screenshot(87).png'
+import photo_6 from '../assets/images/screenshots/Screenshot(88).png'
 
 // fetch riuscito, gestire i dati di Card
 
@@ -27,7 +28,8 @@ function HomePage() {
         photo_2,
         photo_3,
         photo_4,
-        photo_5
+        photo_5, 
+        photo_6
       ];
   
       let imagesLoadedCount = 0;
