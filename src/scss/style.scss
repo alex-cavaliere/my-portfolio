@@ -21,10 +21,21 @@ header{
         & span{
             display: none;
             position: absolute;
+            width: 2rem;
+            height: 2rem;
             padding: 0.6rem;
             border-radius: 10px;
             & i{
-                font-size: x-large;
+                transition: 0.3s all;
+            }
+            & .line-1{
+                transform: rotate(0deg) translate(0, 0);
+            }
+            & .line-2{
+                opacity: 1;
+            }
+            & .line-3{
+                transform: rotate(0deg) translate(0, 0);
             }
         }
         & a{
@@ -179,8 +190,8 @@ header{
             animation: infoAnimation 500ms ease-in-out;
         }
         & aside{
-            background: url('../assets/Alessandro_Cavaliere_foto.jpeg') no-repeat;
-            background-size: cover;
+            background: url('../assets/Alessandro_Cavaliere_foto.png') no-repeat;
+            background-size: contain;
             background-position: center;
             width: 50%;
             animation: photoAnimation 500ms ease-in-out;
@@ -296,14 +307,42 @@ footer{
     
 }
 @media screen and (max-width:800px) {
+    #home{
+        padding-top: 6.3rem;
+    }
     header{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 9999;
         & nav {
-            & a{
-                display: none;
+            .navbar-container{
+                opacity: 0;
+                transform: scale(0.5);
+                transform-origin: top right;
+                pointer-events: none;
             }
         }
         & nav.responsive{
+            & span{
+                & i{
+                    background-color: white;
+                    transition: 0.3s all;
+                }
+                & .line-1{
+                    transform: rotate(45deg) translate(6px, 6px);
+                }
+                & .line-2{
+                    opacity: 0;
+                }
+                & .line-3{
+                    transform: rotate(-45deg) translate(6px, -6px);
+                }
+            }
             & .navbar-container{
+                pointer-events: auto;
+                opacity: 1;
+                background-color: rgba(255, 255, 255, 0.778);
                 flex-direction: column;
                 max-width: max-content;
                 position: absolute;
@@ -311,14 +350,18 @@ footer{
                 top: 6rem;
                 transform: scale(1);
                 transition: transform 250ms ease-in-out;
-                z-index: 99999;
+                border-radius: 10px;
+                padding: 1rem;
+                z-index: 9999;
+                transition: 0.3s all;
                 & a{
-                    display: block;
                     text-align: left;
-                    background-color: white;
                     padding: 1rem;
-                    border-bottom: 1px solid #051E44;
-                    z-index: 9999;
+                    margin: 0.5rem;
+                    color: white;
+                    background-color: #051E44;
+                    border: 2px solid #051E44;
+                    border-radius: 25px;
                 }
             }
         }
@@ -326,6 +369,14 @@ footer{
             display: block;
             right: 2rem;
             top: 1.5rem;
+            & i{
+                display: block;
+                background-color: black;
+                height: 4px;
+                width: 100%;
+                border-radius: 2px;
+                margin-top: 0.3rem;
+            }
         }
     }
     #info{

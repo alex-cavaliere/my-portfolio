@@ -23,11 +23,22 @@ header nav .navbar-container {
 header nav span {
   display: none;
   position: absolute;
+  width: 2rem;
+  height: 2rem;
   padding: 0.6rem;
   border-radius: 10px;
 }
 header nav span i {
-  font-size: x-large;
+  transition: 0.3s all;
+}
+header nav span .line-1 {
+  transform: rotate(0deg) translate(0, 0);
+}
+header nav span .line-2 {
+  opacity: 1;
+}
+header nav span .line-3 {
+  transform: rotate(0deg) translate(0, 0);
 }
 header nav a {
   font-size: larger;
@@ -183,8 +194,8 @@ header nav a:hover {
   animation: infoAnimation 500ms ease-in-out;
 }
 #info #about aside {
-  background: url("../assets/Alessandro_Cavaliere_foto.jpeg") no-repeat;
-  background-size: cover;
+  background: url("../assets/Alessandro_Cavaliere_foto.png") no-repeat;
+  background-size: contain;
   background-position: center;
   width: 50%;
   animation: photoAnimation 500ms ease-in-out;
@@ -294,10 +305,38 @@ footer :nth-child(n) svg {
   }
 }
 @media screen and (max-width: 800px) {
-  header nav a {
-    display: none;
+  #home {
+    padding-top: 6.3rem;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+  }
+  header nav .navbar-container {
+    opacity: 0;
+    transform: scale(0.5);
+    transform-origin: top right;
+    pointer-events: none;
+  }
+  header nav.responsive span i {
+    background-color: white;
+    transition: 0.3s all;
+  }
+  header nav.responsive span .line-1 {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  header nav.responsive span .line-2 {
+    opacity: 0;
+  }
+  header nav.responsive span .line-3 {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
   header nav.responsive .navbar-container {
+    pointer-events: auto;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.778);
     flex-direction: column;
     max-width: max-content;
     position: absolute;
@@ -305,20 +344,32 @@ footer :nth-child(n) svg {
     top: 6rem;
     transform: scale(1);
     transition: transform 250ms ease-in-out;
-    z-index: 99999;
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: 9999;
+    transition: 0.3s all;
   }
   header nav.responsive .navbar-container a {
-    display: block;
     text-align: left;
-    background-color: white;
     padding: 1rem;
-    border-bottom: 1px solid #051E44;
-    z-index: 9999;
+    margin: 0.5rem;
+    color: white;
+    background-color: #051E44;
+    border: 2px solid #051E44;
+    border-radius: 25px;
   }
   header nav span {
     display: block;
     right: 2rem;
     top: 1.5rem;
+  }
+  header nav span i {
+    display: block;
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 0.3rem;
   }
   #info {
     overflow: auto;

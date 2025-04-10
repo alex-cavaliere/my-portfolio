@@ -14,7 +14,7 @@ function Bio() {
           </p>
         </article>
         <aside>
-          
+            {/* background image managed in css */}
         </aside>
       </div>
     </div>

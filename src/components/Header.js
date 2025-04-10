@@ -24,12 +24,16 @@ function Header() {
         <img className='logo' src={logo} alt='Alessandro Cavaliere'/>
       </div>
       <nav className='navbar'>
-        <div className='navbar-container' onClick={editNavbar}>
-          <NavLink to='/'>Homepage</NavLink>
-          <NavLink to='/info'>info </NavLink>
-          <NavLink to='/contact'>contact</NavLink>
+        <div className='navbar-container'>
+          <NavLink to='/' onClick={editNavbar}>Homepage</NavLink>
+          <NavLink to='/info' onClick={editNavbar}>info </NavLink>
+          <NavLink to='/contact' onClick={editNavbar}>contact</NavLink>
         </div>
-        <span id='icon' onClick={editNavbar}><i className="fa-solid fa-bars"></i></span>
+        <span id='icon' onClick={editNavbar}>
+          <i className='line-1'></i>
+          <i className='line-2'></i>
+          <i className='line-3'></i>
+        </span>
       </nav>
     </header>
   )
