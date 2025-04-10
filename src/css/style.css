@@ -305,7 +305,7 @@ footer :nth-child(n) svg {
   }
 }
 @media screen and (max-width: 800px) {
-  #home {
+  #home, #info, #contacts {
     padding-top: 6.3rem;
   }
   header {
